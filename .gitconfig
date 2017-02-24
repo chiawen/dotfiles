@@ -12,8 +12,6 @@
   ui = auto
 [pull]
   rebase = true
-[branch]
-  autosetuprebase = always
 [alias]
   gl = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
   gr = log --color=always --all --topo-order --pretty='format: %Cgreen%h%Creset %s%Cred%d%Creset'
