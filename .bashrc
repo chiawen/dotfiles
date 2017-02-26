@@ -1,4 +1,4 @@
-# source code from https://github.com/appleboy/config
+# ref: https://github.com/appleboy/config
 
 export LANGUAGE="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
@@ -9,12 +9,9 @@ export LANG="en_US.UTF-8"
 export CLICOLOR=1
 
 # common variable
-export BLOCKSIZE="k"
 export EDITOR="vim"
-export GIT_PAGER="less"
-export LESS="-EfmrSwX"
 export LSCOLORS="dxfxcxdxbxegedabagacad"
-export PATH="/usr/local/sbin:/usr/sbin:/sbin:$PATH"
+#export PATH="/usr/local/sbin:/usr/sbin:/sbin:$PATH"
 
 # Add a timestamp to your bash history
 export HISTTIMEFORMAT="%d/%m/%y %T "
