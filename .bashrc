@@ -51,10 +51,10 @@ function git_diff() {
 }
 
 if [ "`uname -s`" == "Linux" ]; then
-    alias ls="/bin/ls -aF --color=always"
-    alias tmux="TERM=screen-256color /usr/bin/tmux"
+    alias ls="/bin/ls --color=always"
+    alias tmux="tmux -2"
 else
-    alias ls="/bin/ls -aF"
+	alias tmux="tmux -2"
 fi
 
 # support https://github.com/creationix/nvm
