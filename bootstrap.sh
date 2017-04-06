@@ -27,10 +27,6 @@ unset doIt;
 
 [ -d "${HOME}/bin" ] || mkdir ~/bin
 
-# download z.sh (https://github.com/rupa/z)
-[ -f "${HOME}/z.sh" ] && rm -rf ${HOME}/z.sh
-curl -L "https://raw.githubusercontent.com/rupa/z/master/z.sh" -o ~/z.sh
-chmod 755 ~/z.sh
 
 # download git-blame-someone-else (https://github.com/jayphelps/git-blame-someone-else)
 curl -o ~/bin/git-blame-someone-else "https://raw.githubusercontent.com/jayphelps/git-blame-someone-else/master/git-blame-someone-else"
