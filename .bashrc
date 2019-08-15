@@ -11,7 +11,6 @@ export CLICOLOR=1
 # common variable
 export EDITOR="vim"
 export LSCOLORS="dxfxcxdxbxegedabagacad"
-#export PATH="/usr/local/sbin:/usr/sbin:/sbin:$PATH"
 
 # Add a timestamp to your bash history
 export HISTTIMEFORMAT="%d/%m/%y %T "
@@ -57,16 +56,6 @@ else
 	alias tmux="tmux -2"
 fi
 
-# support https://github.com/creationix/nvm
-if [ -f "${HOME}/.nvm/nvm.sh" ]; then
-    export NVM_DIR=$HOME/.nvm
-    source ${HOME}/.nvm/nvm.sh > /dev/null 2>&1
-    nvm use stable > /dev/null 2>&1
-fi
-
-# support https://github.com/phpbrew/phpbrew
-[ -f "${HOME}/.phpbrew/bashrc" ] && source ${HOME}/.phpbrew/bashrc
-
 # init z! (https://github.com/rupa/z)
 [ -f "${HOME}/z.sh" ] && source ${HOME}/z.sh
 
@@ -75,19 +64,9 @@ if [ -d "${HOME}/.git-semantic-commits" ]; then
     export PATH=$PATH:${HOME}/.git-semantic-commits
 fi
 
-# support composer command
-if [ -d "${HOME}/.composer/vendor/bin" ]; then
-    export PATH=$PATH:${HOME}/.composer/vendor/bin
-fi
-
 # add bin folder to $PATH.
 if [ -d "${HOME}/bin" ]; then
     export PATH=$PATH:${HOME}/bin
-fi
-
-# Add RVM to PATH for scripting
-if [ -d "$HOME/.rvm/bin" ]; then
-    export PATH="$PATH:$HOME/.rvm/bin"
 fi
 
 

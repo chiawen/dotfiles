@@ -2,11 +2,11 @@
 
 cd "$(dirname "${BASH_SOURCE}")";
 
-git pull origin master;
+#git pull origin master;
 
 function doIt() {
   rsync --exclude ".git/" --exclude "bootstrap.sh" \
-    --exclude "Makefile" --exclude "screenshot/" \
+    --exclude "screenshot/" \
     --exclude "README.md" --exclude "alpine/" \
     --exclude "freebsd/" \
     -avh --no-perms . ~;
@@ -28,9 +28,6 @@ unset doIt;
 [ -d "${HOME}/bin" ] || mkdir ~/bin
 
 
-# download git-blame-someone-else (https://github.com/jayphelps/git-blame-someone-else)
-curl -o ~/bin/git-blame-someone-else "https://raw.githubusercontent.com/jayphelps/git-blame-someone-else/master/git-blame-someone-else"
-chmod 755 ~/bin/git-blame-someone-else
 
 # download diff-so-fancy (https://github.com/stevemao/diff-so-fancy)
 [ -d "~/bin/libexec" ] || mkdir -p ~/bin/libexec

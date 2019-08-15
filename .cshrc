@@ -72,10 +72,10 @@ else
     set prompt = "[%{^[[1;33m%}%U`hostname -s`%u%{^[[0m%}][%{^[[1;35m%}%U%n%u%{^[[0m%}][%BW$WINDOW%b][ %{^[[1;36m%}%~%{^[[0m%} ]%B%#%b "
 endif
 
-setenv ENABLE_STARTUP_LOCALE zh_TW.UTF-8
-setenv LC_CTYPE is_IS.ISO_8859-1
-setenv LANG zh_TW.UTF-8
-setenv LC_ALL zh_TW.UTF-8
+#setenv ENABLE_STARTUP_LOCALE zh_TW.UTF-8
+#setenv LC_CTYPE is_IS.ISO_8859-1
+#setenv LANG zh_TW.UTF-8
+#setenv LC_ALL zh_TW.UTF-8
 setenv EDITOR "/usr/local/bin/vim"
 setenv LESS "-EfmrSw"
 setenv LSCOLORS "gxfxcxdxbxegedabagacad"
